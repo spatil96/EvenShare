@@ -1,5 +1,5 @@
 import React from "react";
-import letter from "./letter.webp";
+import letter from "../letter.webp";
 import "./signup.css";
 import { Link } from "react-router-dom";
 import NavigationBar from "../NavigationBar";
@@ -17,7 +17,7 @@ function Signup() {
               </Link>
             </div>
             <div className="col s6 left-align">
-              <h5 className="grey-text">INTRODUCE YOURSELF</h5>
+              <h5 className="grey-text">Please enter your details</h5>
               <div className="signUpDetails">
                 <form className="signUpForm">
                   <div className="inputBox">
@@ -26,15 +26,45 @@ function Signup() {
                         id="name"
                         type="text"
                         className="validate"
-                        // Add onChange and value props accordingly
+                        // onChange={this.handleChange}
+                        // value={this.state.name}
                       ></input>
                       <label htmlFor="name">username</label>
                     </div>
-                    {/* Repeat similar input fields for password, email, and phone */}
+                    <div className="input-field inputBar">
+                      <input
+                        id="password"
+                        type="password"
+                        className="validate"
+                        // onChange={this.handleChange}
+                        // value={this.state.password}
+                      ></input>
+                      <label htmlFor="password">password</label>
+                    </div>
+                    <div className="input-field inputBar">
+                      <input
+                        id="email"
+                        type="email"
+                        className="validate"
+                        // onChange={this.handleChange}
+                        // value={this.state.email}
+                      ></input>
+                      <label htmlFor="email">email id</label>
+                    </div>
+                    <div className="input-field inputBar">
+                      <input
+                        id="phone"
+                        type="tel"
+                        className="validate"
+                        // onChange={this.handleChange}
+                        // value={this.state.phone}
+                      ></input>
+                      <label htmlFor="phone">Phone Number</label>
+                    </div>
                   </div>
                   <button
                     className="waves-effect waves-light btn-large orange darken-4 submitBtn"
-                    // Add onClick event handler
+                    // onClick={this.signUpUser}
                   >
                     Sign me up!
                   </button>

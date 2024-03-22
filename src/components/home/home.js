@@ -87,15 +87,6 @@ const home = () => {
                 </Link>
               </div>
             </div>
-            <div className="row left-align">
-              <div className="container deviceIcons">
-                <p>
-                  Free for <span> </span>
-                  <i className="fab fa-apple"></i> iPhone ,
-                  <i className="fab fa-android"></i> android and web
-                </p>
-              </div>
-            </div>
           </div>
           <div className="col s5 airplane">
             {/* <img className="responsive-img" alt="airplane" src={airplane} /> */}
